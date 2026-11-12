@@ -75,6 +75,8 @@
     .project-art { height: 245px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
     .art-one { background: #d8e0cc; }
     .art-two { background: #e7d9ca; }
+    .project-image { width: 100%; height: 100%; object-fit: contain; padding: 34px; display: block; filter: drop-shadow(0 16px 24px rgba(23, 25, 21, .15)); transition: transform .3s var(--ease); }
+    .project:hover .project-image { transform: scale(1.06); }
     .visual-window { width: 63%; height: 75%; background: #f7f5ef; border-radius: 7px; box-shadow: 0 15px 50px #6570572a; transform: rotate(-4deg); padding: 14px; }
     .visual-bar { height: 8px; width: 35%; background: #e0e1d7; border-radius: 8px; }
     .visual-sun { width: 62px; height: 62px; background: #d6ed7e; border-radius: 50%; position: absolute; top: 22%; right: 24%; }
@@ -172,12 +174,12 @@
       <div class="section-head"><h2 data-en="What I’m building" data-ar="ما أعمل على بنائه">ما أعمل على بنائه</h2><span class="mono" data-en="01 / Current focus" data-ar="01 / تركيزي الحالي">01 / تركيزي الحالي</span></div>
       <div class="projects">
         <a class="project" href="https://azilal-tourism.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="ADRAR Tourism website">
-          <div class="project-art art-one"><div class="visual-window"><div class="visual-bar"></div><div class="visual-sun"></div><div class="visual-hills"></div></div></div>
+          <div class="project-art art-one"><img class="project-image" src="assets/adrar-icon.jpg" alt="شعار تطبيق ADRAR" /></div>
           <div class="project-info"><div><div class="project-meta" data-en="Tourism platform · Morocco" data-ar="منصة سياحية · المغرب">منصة سياحية · المغرب</div><div class="project-title" data-en="ADRAR Tourism" data-ar="أدرار للسياحة">أدرار للسياحة</div></div><span class="project-go" aria-hidden="true">↗</span></div>
         </a>
-        <article class="project project--soon" aria-label="Smart software platform, in development">
-          <div class="project-art art-two"><div class="poster"><span class="poster-tag">FIELD NOTES · NO. 01</span><div class="poster-circle"></div><div class="poster-line"></div></div></div>
-          <div class="project-info"><div><div class="project-meta" data-en="In development · AI & SaaS" data-ar="قيد التطوير · ذكاء اصطناعي وSaaS">قيد التطوير · ذكاء اصطناعي وSaaS</div><div class="project-title" data-en="Smart software platform" data-ar="منصة برمجية ذكية">منصة برمجية ذكية</div></div><span class="project-go" aria-hidden="true">···</span></div>
+        <article class="project project--soon" aria-label="3D library app, in development">
+          <div class="project-art art-two"><img class="project-image" src="assets/maktaba-3d-icon.jpg" alt="شعار تطبيق المكتبة 3D" /></div>
+          <div class="project-info"><div><div class="project-meta" data-en="Digital library · Morocco" data-ar="مكتبة رقمية · المغرب">مكتبة رقمية · المغرب</div><div class="project-title" data-en="3D Library" data-ar="المكتبة 3D">المكتبة 3D</div></div><span class="project-go" aria-hidden="true">···</span></div>
         </article>
       </div>
     </section>
