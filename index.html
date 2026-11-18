@@ -553,6 +553,73 @@
     .art-two {
       background: radial-gradient(circle at 40% 60%, rgba(213, 243, 106, 0.15) 0%, rgba(15, 23, 42, 0.9) 80%);
     }
+    .art-dhikra {
+      background: radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.22) 0%, rgba(15, 23, 42, 0.95) 80%);
+    }
+    .art-jarida {
+      background: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.2) 0%, rgba(15, 23, 42, 0.95) 80%);
+    }
+    .art-qahwati {
+      background: radial-gradient(circle at 50% 50%, rgba(217, 119, 6, 0.22) 0%, rgba(15, 23, 42, 0.95) 80%);
+    }
+    .art-nassiri {
+      background: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.2) 0%, rgba(15, 23, 42, 0.95) 80%);
+    }
+    .art-badge {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
+      z-index: 1;
+    }
+    .art-icon {
+      font-size: 52px;
+      line-height: 1;
+      filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.6));
+      transition: transform .3s var(--ease);
+    }
+    .project:hover .art-icon {
+      transform: scale(1.15) translateY(-4px);
+    }
+    .art-tag {
+      font-family: "DM Mono", monospace;
+      font-size: 10px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+      padding: 5px 12px;
+      border-radius: 100px;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(8px);
+    }
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 12px;
+    }
+    .project-tag {
+      font: 10px "DM Mono", monospace;
+      color: var(--text-subtle);
+      background: rgba(255, 255, 255, 0.04);
+      padding: 3px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .status-badge {
+      font-size: 9px;
+      font-family: "DM Mono", monospace;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 100px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      display: inline-block;
+      margin-top: 4px;
+    }
     .project-image {
       width: 100%;
       height: 100%;
@@ -880,18 +947,120 @@
             <div>
               <div class="project-meta" data-en="Tourism platform · Morocco" data-ar="منصة سياحية · المغرب">منصة سياحية · المغرب</div>
               <div class="project-title" data-en="ADRAR Tourism" data-ar="أدرار للسياحة">أدرار للسياحة</div>
+              <div class="project-tags">
+                <span class="project-tag">Web App</span>
+                <span class="project-tag">Vercel</span>
+                <span class="project-tag">Tourism</span>
+              </div>
             </div>
             <span class="project-go" aria-hidden="true">↗</span>
           </div>
         </a>
+
+        <article class="project project--soon" aria-label="Dhikra AI Memory Assistant app">
+          <div class="project-art art-dhikra">
+            <div class="art-badge">
+              <span class="art-icon">🧠</span>
+              <span class="art-tag">AI · RAG · Memory</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div>
+              <div class="project-meta" data-en="AI Personal Memory · Mobile App" data-ar="مساعد ذاكرة شخصي ذكي · تطبيق هاتف">مساعد ذاكرة شخصي ذكي · تطبيق هاتف</div>
+              <div class="project-title" data-en="Dhikra (ذِكْرى)" data-ar="ذِكْرى (Dhikra)">ذِكْرى (Dhikra)</div>
+              <div class="status-badge" data-en="In development · GitHub" data-ar="قيد التطوير · GitHub">قيد التطوير · GitHub</div>
+              <div class="project-tags">
+                <span class="project-tag">React Native</span>
+                <span class="project-tag">AI / RAG</span>
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">SQLite</span>
+              </div>
+            </div>
+            <span class="project-go" aria-hidden="true">···</span>
+          </div>
+        </article>
+
+        <article class="project project--soon" aria-label="Jarida Flipbook digital experience">
+          <div class="project-art art-jarida">
+            <div class="art-badge">
+              <span class="art-icon">📰</span>
+              <span class="art-tag">3D Interactive Flipbook</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div>
+              <div class="project-meta" data-en="Digital Newspaper Experience · Web" data-ar="صحيفة رقمية تفاعلية · تجربة ويب">صحيفة رقمية تفاعلية · تجربة ويب</div>
+              <div class="project-title" data-en="Jarida Flipbook (جريدة الأفق)" data-ar="جريدة الأفق (Jarida)">جريدة الأفق (Jarida)</div>
+              <div class="status-badge" data-en="In development · GitHub" data-ar="قيد التطوير · GitHub">قيد التطوير · GitHub</div>
+              <div class="project-tags">
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">3D Page Turn</span>
+                <span class="project-tag">Vite</span>
+                <span class="project-tag">Drizzle</span>
+              </div>
+            </div>
+            <span class="project-go" aria-hidden="true">···</span>
+          </div>
+        </article>
+
+        <article class="project project--soon" aria-label="Qahwati cafe management platform">
+          <div class="project-art art-qahwati">
+            <div class="art-badge">
+              <span class="art-icon">☕</span>
+              <span class="art-tag">Café Management Suite</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div>
+              <div class="project-meta" data-en="Café Management System · Web & Mobile" data-ar="منصة إدارة المقاهي · ويب وهاتف">منصة إدارة المقاهي · ويب وهاتف</div>
+              <div class="project-title" data-en="Qahwati (قهوتي)" data-ar="قهوتي (Qahwati)">قهوتي (Qahwati)</div>
+              <div class="status-badge" data-en="In development · GitHub" data-ar="قيد التطوير · GitHub">قيد التطوير · GitHub</div>
+              <div class="project-tags">
+                <span class="project-tag">Expo / React Native</span>
+                <span class="project-tag">Web Dashboard</span>
+                <span class="project-tag">TypeScript</span>
+              </div>
+            </div>
+            <span class="project-go" aria-hidden="true">···</span>
+          </div>
+        </article>
+
+        <article class="project project--soon" aria-label="NASSIRI ERP system">
+          <div class="project-art art-nassiri">
+            <div class="art-badge">
+              <span class="art-icon">📊</span>
+              <span class="art-tag">Enterprise ERP Solution</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div>
+              <div class="project-meta" data-en="Enterprise ERP · Business Management" data-ar="نظام إدارة المؤسسات · ERP">نظام إدارة المؤسسات · ERP</div>
+              <div class="project-title" data-en="NASSIRI ERP" data-ar="نظام ERP الناصري">نظام ERP الناصري</div>
+              <div class="status-badge" data-en="Private Project · GitHub" data-ar="مشروع خاص · GitHub">مشروع خاص · GitHub</div>
+              <div class="project-tags">
+                <span class="project-tag">ERP</span>
+                <span class="project-tag">Full-Stack</span>
+                <span class="project-tag">Business Systems</span>
+              </div>
+            </div>
+            <span class="project-go" aria-hidden="true">···</span>
+          </div>
+        </article>
+
         <article class="project project--soon" aria-label="3D library app, in development">
           <div class="project-art art-two">
             <img class="project-image" src="assets/maktaba-3d-icon.jpg" alt="شعار تطبيق المكتبة 3D" />
           </div>
           <div class="project-info">
             <div>
-              <div class="project-meta" data-en="Digital library · Morocco" data-ar="مكتبة رقمية · المغرب">مكتبة رقمية · المغرب</div>
+              <div class="project-meta" data-en="Digital library · Morocco" data-ar="مكتبة رقمية ثلاثية الأبعاد · المغرب">مكتبة رقمية ثلاثية الأبعاد · المغرب</div>
               <div class="project-title" data-en="3D Library" data-ar="المكتبة 3D">المكتبة 3D</div>
+              <div class="status-badge" data-en="Concept & 3D" data-ar="فكرة وتصميم 3D">فكرة وتصميم 3D</div>
+              <div class="project-tags">
+                <span class="project-tag">3D Library</span>
+                <span class="project-tag">Web3D</span>
+                <span class="project-tag">Digital Books</span>
+              </div>
             </div>
             <span class="project-go" aria-hidden="true">···</span>
           </div>
