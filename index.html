@@ -45,6 +45,18 @@
       min-height: 100vh;
     }
     body[dir="rtl"] { font-family: "Noto Sans Arabic", Manrope, sans-serif; }
+    body[dir="rtl"] .mono,
+    body[dir="rtl"] .eyebrow,
+    body[dir="rtl"] .nav-links,
+    body[dir="rtl"] .project-meta,
+    body[dir="rtl"] .footer-meta,
+    body[dir="rtl"] .status-badge,
+    body[dir="rtl"] .art-tag,
+    body[dir="rtl"] .hero-discipline,
+    body[dir="rtl"] .project-tag,
+    body[dir="rtl"] .skill {
+      letter-spacing: 0 !important;
+    }
 
     /* Ambient background tech glow */
     body::before {
@@ -579,6 +591,13 @@
       filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.6));
       transition: transform .3s var(--ease);
     }
+    .art-svg {
+      transition: transform .35s var(--ease);
+      filter: drop-shadow(0 10px 24px rgba(0, 0, 0, 0.5));
+    }
+    .project:hover .art-svg {
+      transform: scale(1.14) translateY(-4px);
+    }
     .project:hover .art-icon {
       transform: scale(1.15) translateY(-4px);
     }
@@ -621,16 +640,18 @@
       margin-top: 4px;
     }
     .project-image {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      padding: 38px;
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 24px;
       display: block;
-      filter: drop-shadow(0 16px 25px rgba(0, 0, 0, 0.5));
-      transition: transform .35s var(--ease);
+      border: 2px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+      transition: transform .35s var(--ease), border-color .35s var(--ease);
     }
     .project:hover .project-image {
       transform: scale(1.08);
+      border-color: var(--border-accent);
     }
 
     .project-info {
@@ -960,7 +981,20 @@
         <article class="project project--soon" aria-label="Dhikra AI Memory Assistant app">
           <div class="project-art art-dhikra">
             <div class="art-badge">
-              <span class="art-icon">🧠</span>
+              <svg class="art-svg" viewBox="0 0 64 64" width="60" height="60" fill="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="dhikraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#c084fc"/>
+                    <stop offset="100%" stop-color="#38bdf8"/>
+                  </linearGradient>
+                </defs>
+                <rect x="8" y="8" width="48" height="48" rx="14" fill="rgba(192, 132, 252, 0.12)" stroke="url(#dhikraGrad)" stroke-width="2"/>
+                <circle cx="32" cy="24" r="5" fill="#c084fc"/>
+                <circle cx="22" cy="38" r="4" fill="#38bdf8"/>
+                <circle cx="42" cy="38" r="4" fill="#d5f36a"/>
+                <path d="M32 24 L22 38 M32 24 L42 38 M22 38 L42 38" stroke="url(#dhikraGrad)" stroke-width="1.8" stroke-dasharray="3 3"/>
+                <circle cx="32" cy="33" r="2.5" fill="#fff"/>
+              </svg>
               <span class="art-tag">AI · RAG · Memory</span>
             </div>
           </div>
@@ -983,7 +1017,20 @@
         <article class="project project--soon" aria-label="Jarida Flipbook digital experience">
           <div class="project-art art-jarida">
             <div class="art-badge">
-              <span class="art-icon">📰</span>
+              <svg class="art-svg" viewBox="0 0 64 64" width="60" height="60" fill="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="jaridaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#fbbf24"/>
+                    <stop offset="100%" stop-color="#f59e0b"/>
+                  </linearGradient>
+                </defs>
+                <rect x="10" y="10" width="44" height="44" rx="10" fill="rgba(245, 158, 11, 0.1)" stroke="url(#jaridaGrad)" stroke-width="2"/>
+                <rect x="16" y="17" width="32" height="11" rx="2" fill="rgba(251, 191, 36, 0.3)"/>
+                <line x1="16" y1="34" x2="33" y2="34" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/>
+                <line x1="16" y1="40" x2="30" y2="40" stroke="rgba(251, 191, 36, 0.65)" stroke-width="2" stroke-linecap="round"/>
+                <line x1="16" y1="46" x2="28" y2="46" stroke="rgba(251, 191, 36, 0.65)" stroke-width="2" stroke-linecap="round"/>
+                <rect x="36" y="32" width="12" height="16" rx="2" fill="rgba(251, 191, 36, 0.2)" stroke="#fbbf24" stroke-width="1.5"/>
+              </svg>
               <span class="art-tag">3D Interactive Flipbook</span>
             </div>
           </div>
@@ -1006,7 +1053,18 @@
         <article class="project project--soon" aria-label="Qahwati cafe management platform">
           <div class="project-art art-qahwati">
             <div class="art-badge">
-              <span class="art-icon">☕</span>
+              <svg class="art-svg" viewBox="0 0 64 64" width="60" height="60" fill="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="qahwatiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#fb923c"/>
+                    <stop offset="100%" stop-color="#ea580c"/>
+                  </linearGradient>
+                </defs>
+                <rect x="10" y="10" width="44" height="44" rx="12" fill="rgba(234, 88, 12, 0.12)" stroke="url(#qahwatiGrad)" stroke-width="2"/>
+                <path d="M19 28h22v10a8 8 0 0 1-8 8h-6a8 8 0 0 1-8-8V28z" fill="rgba(251, 146, 60, 0.25)" stroke="#fb923c" stroke-width="2"/>
+                <path d="M41 30h3a3.5 3.5 0 0 1 0 7h-3" stroke="#fb923c" stroke-width="2" stroke-linecap="round"/>
+                <path d="M24 22c0-2 2-3 2-4m4 4c0-2 2-3 2-4m4 4c0-2 2-3 2-4" stroke="#fdba74" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
               <span class="art-tag">Café Management Suite</span>
             </div>
           </div>
@@ -1028,7 +1086,20 @@
         <article class="project project--soon" aria-label="NASSIRI ERP system">
           <div class="project-art art-nassiri">
             <div class="art-badge">
-              <span class="art-icon">📊</span>
+              <svg class="art-svg" viewBox="0 0 64 64" width="60" height="60" fill="none" aria-hidden="true">
+                <defs>
+                  <linearGradient id="erpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#34d399"/>
+                    <stop offset="100%" stop-color="#059669"/>
+                  </linearGradient>
+                </defs>
+                <rect x="10" y="10" width="44" height="44" rx="12" fill="rgba(16, 185, 129, 0.12)" stroke="url(#erpGrad)" stroke-width="2"/>
+                <rect x="18" y="34" width="5" height="13" rx="1.5" fill="#34d399"/>
+                <rect x="27" y="27" width="5" height="20" rx="1.5" fill="#10b981"/>
+                <rect x="36" y="20" width="5" height="27" rx="1.5" fill="#d5f36a"/>
+                <path d="M19 29 L28 22 L37 17 L44 21" stroke="#6ee7b7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="44" cy="21" r="2.5" fill="#d5f36a"/>
+              </svg>
               <span class="art-tag">Enterprise ERP Solution</span>
             </div>
           </div>
