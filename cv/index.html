@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curriculum Vitae — Abdelaziz Ait-Haddou | Full-Stack Developer & CTO</title>
+  <meta name="description" content="Official CV for Abdelaziz Ait-Haddou. 0-to-1 Full-Stack Developer, Systems Builder & CTO with 7,130+ commits and 100+ clients. Open to US/EU remote roles, contract work, and relocation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #090c10;
+      --card: #0f141d;
+      --border: rgba(255, 255, 255, 0.08);
+      --text: #f0f6fc;
+      --muted: #8b949e;
+      --green: #34d399;
+      --cyan: #38bdf8;
+      --accent: #0284c7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    .cv-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 48px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+    }
+    .top-actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+    }
+    .btn-primary:hover {
+      background: #0369a1;
+    }
+    .header-section {
+      margin-bottom: 36px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin: 0 0 8px;
+      letter-spacing: -0.03em;
+    }
+    .subtitle {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--cyan);
+      margin: 0 0 16px;
+    }
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 13.5px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .meta-bar a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .meta-bar a:hover {
+      color: var(--cyan);
+    }
+    .hiring-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(52, 211, 153, 0.1);
+      border: 1px solid rgba(52, 211, 153, 0.25);
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 100px;
+    }
+    .dot {
+      width: 7px;
+      height: 7px;
+      background: var(--green);
+      border-radius: 50%;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--cyan);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin: 36px 0 18px;
+      font-family: "DM Mono", monospace;
+    }
+    .summary-text {
+      color: #c9d1d9;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+    .skill-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .skill-cat {
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    .skill-list {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .timeline-item {
+      margin-bottom: 28px;
+      position: relative;
+    }
+    .timeline-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .job-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .company {
+      color: var(--cyan);
+      font-weight: 600;
+    }
+    .dates {
+      font-family: "DM Mono", monospace;
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+    ul.job-bullets {
+      margin: 8px 0 0 18px;
+      padding: 0;
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+    ul.job-bullets li {
+      margin-bottom: 6px;
+    }
+    .edu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 650px) {
+      .cv-wrap { padding: 24px; }
+      .edu-grid { grid-template-columns: 1fr; }
+      h1 { font-size: 28px; }
+    }
+    @media print {
+      body { background: #fff; color: #111; padding: 0; }
+      .cv-wrap { border: none; box-shadow: none; padding: 0; background: #fff; }
+      .top-actions { display: none; }
+      .section-title { color: #0284c7; border-color: #ddd; }
+      .subtitle, .company { color: #0284c7; }
+      .meta-bar, .meta-bar a, .skill-list, ul.job-bullets { color: #333; }
+      .skill-box { border-color: #eee; background: #fafafa; }
+      .hiring-pill { border: 1px solid #34d399; color: #059669; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-wrap">
+    <div class="top-actions">
+      <a href="/" class="btn btn-secondary">← Back to Portfolio</a>
+      <div style="display:flex; gap:10px;">
+        <button onclick="window.print()" class="btn btn-secondary">🖨 Print Résumé</button>
+        <a href="assets/CV-Abdelaziz-Ait-Haddou.pdf" download="Abdelaziz-Ait-Haddou-CV.pdf" class="btn btn-primary">⬇ Download PDF</a>
+      </div>
+    </div>
+
+    <header class="header-section">
+      <h1>Abdelaziz Ait-Haddou</h1>
+      <div class="subtitle">Full-Stack Developer, AI/Systems Builder & CTO</div>
+      <div class="meta-bar">
+        <span>📍 Douar Inguirt, Azilal, Morocco (Open to Relocation / Remote)</span>
+        <span>📧 <a href="mailto:azizaithaddou877@gmail.com">azizaithaddou877@gmail.com</a></span>
+        <span>📞 <a href="tel:+212770255809">+212 770 255 809</a></span>
+        <span>🐙 <a href="https://github.com/ab99-c" target="_blank">github.com/ab99-c</a></span>
+        <span>💼 <a href="https://www.linkedin.com/in/aithaddou-abdelaziz-806753424" target="_blank">LinkedIn</a></span>
+        <span>🌐 <a href="https://abdelaziz-aithaddou-portfolio.vercel.app/" target="_blank">Portfolio</a></span>
+      </div>
+      <div class="hiring-pill">
+        <span class="dot"></span>
+        <span>Open for Global Remote (US/EU), Senior Full-Stack, AI Systems, CTO Roles, and Relocation / Visa Sponsorship</span>
+      </div>
+    </header>
+
+    <div class="section-title">Executive Summary</div>
+    <p class="summary-text">
+      Resourceful <strong>0-to-1 Full-Stack Developer and CTO</strong> with over <strong>7,130+ Git commits</strong> and track record delivering solutions for <strong>100+ clients and businesses</strong>. Specializes in building end-to-end scalable web applications, distributed APIs (tRPC, Node.js, Python), and AI-driven local RAG pipelines, combined with rare hands-on capability in IoT hardware engineering (ESP32, Arduino, 3D printing) and physical operations. Proven leadership taking products from whiteboard architecture to production deployment and international commerce.
+    </p>
+
+    <div class="section-title">Core Technical Competencies</div>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <div class="skill-cat">Frontend & Interactive 3D</div>
+        <div class="skill-list">React, Next.js, Vite, TypeScript, TailwindCSS, Three.js, Unity WebGL, React Native / Expo, State Management (Zustand, React Query).</div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-cat">Backend, APIs & Architecture</div>
+        <div class="skill-list">Node.js, tRPC (End-to-end type safety), Python 3.14 (FastAPI/Flask), RESTful APIs, WebSockets, Drizzle ORM, Prisma, Serverless Functions.</div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-cat">Databases & Data Storage</div>
+        <div class="skill-list">PostgreSQL, SQLite (Offline-First / Local Vector Embeddings), Redis Caching, ACID compliance, Cloud Object Storage (S3/R2).</div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-cat">Hardware, IoT & Embedded AI</div>
+        <div class="skill-list">ESP32, Arduino, Sensor Integration (I2C, SPI, UART), BLE, MicroPython, OpenSCAD Parametric CAD, Rapid 3D Prototyping.</div>
+      </div>
+    </div>
+
+    <div class="section-title">Key Projects & Technical Leadership</div>
+
+    <div class="timeline-item">
+      <div class="timeline-head">
+        <div>
+          <span class="job-title">Co-Founder & Chief Technology Officer (CTO)</span> — <span class="company">Adrar Tourisme</span>
+        </div>
+        <span class="dates">2024 — Present</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Architected and launched an end-to-end travel, booking, and e-commerce platform using <strong>React, Vite, tRPC, and Stripe</strong>.</li>
+        <li>Implemented multi-role permission architecture (customers, guides, administrators) with sub-100ms API response times.</li>
+        <li>Automated booking workflows, dynamic calendar inventory, and automated payment settlement webhooks.</li>
+        <li>Integrated AI tour recommendation engines to tailor customized expedition routes across Morocco.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-head">
+        <div>
+          <span class="job-title">Creator & Lead Systems Architect</span> — <span class="company">AI Wearable Assistant (ADRAR AI NANO)</span>
+        </div>
+        <span class="dates">2025 — Present</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Designed custom autonomous wearable device integrating dual-lens sensing, microphone input, and onboard <strong>ESP32/Arduino</strong> compute.</li>
+        <li>Designed lightweight parametric snap-fit enclosure in <strong>OpenSCAD</strong> and fabricated prototypes via high-precision 3D printing.</li>
+        <li>Engineered efficient BLE/Wi-Fi telemetry bridge offloading voice transcription and visual queries to local Python AI inference backends.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-head">
+        <div>
+          <span class="job-title">Lead Developer</span> — <span class="company">Dhikra (ذِكْرى) AI Personal Memory Assistant</span>
+        </div>
+        <span class="dates">2026</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Built an offline-first mobile assistant in <strong>React Native</strong> with a specialized Moroccan Darija conversational agent.</li>
+        <li>Designed local RAG (Retrieval-Augmented Generation) pipeline over device <strong>SQLite</strong> vector storage, ensuring 100% data privacy.</li>
+        <li>Implemented background synchronization and temporal date-extraction heuristics for proactive task reminders.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-head">
+        <div>
+          <span class="job-title">Lead Simulation Engineer</span> — <span class="company">3D Virtual Library</span>
+        </div>
+        <span class="dates">2025 — Present</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Created multi-floor navigable digital library simulation integrating <strong>Unity, Three.js, and Blender</strong>.</li>
+        <li>Optimized low-draw-call GLTF asset streaming pipeline, enabling smooth 60fps rendering in modern web browsers without plugins.</li>
+      </ul>
+    </div>
+
+    <div class="section-title">Professional Experience</div>
+
+    <div class="timeline-item">
+      <div class="timeline-head">
+        <div>
+          <span class="job-title">Project Management & AI Automation Consultant</span> — <span class="company">Independent Practice</span>
+        </div>
+        <span class="dates">2025 — Present</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Engineered bespoke task-tracking automation tools and CRM integrations for construction and contracting firms.</li>
+        <li>Digitized procurement, cost-estimation, and subcontractor reporting workflows, reducing project delay variance by over 30%.</li>
+        <li>Built modern responsive web platforms and client relationship portals for commercial enterprises.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-head">
+        <div>
+          <span class="job-title">Head of Procurement & Field Project Coordination</span> — <span class="company">HYDRO MEK</span>
+        </div>
+        <span class="dates">09/2024 — 2025</span>
+      </div>
+      <ul class="job-bullets">
+        <li>Managed multi-million MAD supply chains, price negotiations, supplier audits, and real-time inventory tracking.</li>
+        <li>Supervised daily site progress, subcontractor scheduling, and automated material reconciliation processes.</li>
+      </ul>
+    </div>
+
+    <div class="section-title">Education & Diplomas</div>
+    <div class="edu-grid">
+      <div class="skill-box">
+        <div class="skill-cat">Site Supervision & Quantity Surveying</div>
+        <div class="skill-list">GLOGIST Professional Training Center · 2024</div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-cat">Business Management & Administration</div>
+        <div class="skill-list">ESIAS Errachidia · 2022 – 2024</div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-cat">High School Baccalaureate</div>
+        <div class="skill-list">Lycée Tafilalet · 2022</div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-cat">Technical Installation & Systems</div>
+        <div class="skill-list">OFPPT · 2018 – 2019</div>
+      </div>
+    </div>
+
+    <div class="section-title">Languages</div>
+    <div class="meta-bar" style="margin-top:10px;">
+      <span><strong>English:</strong> Advanced / Professional Working Proficiency</span>
+      <span><strong>French:</strong> Fluent / Professional Working Proficiency</span>
+      <span><strong>Arabic:</strong> Native</span>
+      <span><strong>Tamazight:</strong> Native</span>
+    </div>
+  </div>
+</body>
+</html>
