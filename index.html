@@ -164,6 +164,9 @@
       position: relative;
       overflow: hidden;
     }
+    .adrar-card, .wearable-card, .exp-card {
+      flex: 1;
+    }
     .bento-card:hover {
       transform: translateY(-3px);
       border-color: var(--border-hover);
@@ -622,7 +625,10 @@
     }
 
     @media (max-width: 768px) {
-      .bento-window { padding: 20px; border-radius: 20px; }
+      .bento-window { padding: 18px 16px; border-radius: 20px; }
+      .window-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .nav-group { width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+      .nav-item { font-size: 13px; }
       .bento-grid { grid-template-columns: 1fr; }
       .bento-col:nth-child(3) {
         grid-column: span 1;
@@ -664,7 +670,7 @@
           <div class="hero-flex">
             <div>
               <h1 class="hero-title" data-en="Building intelligent digital experiences, from pixels to hardware." data-ar="نبني تجارب رقمية ذكية، من البكسل إلى العتاد.">Building intelligent digital experiences, from pixels to hardware.</h1>
-              <p class="hero-sub" data-en="Full-Stack Developer & CTO in software engineer, work engineered, customers from pixels to hardware." data-ar="مطور Full-Stack ومؤسس تقني، يجمع بين هندسة البرمجيات وتطوير الأنظمة الذكية.">Full-Stack Developer & CTO in software engineer, work engineered, customers from pixels to hardware.</p>
+              <p class="hero-sub" data-en="Full-Stack Developer & CTO bridging modern software engineering with intelligent embedded systems." data-ar="مطور Full-Stack ومؤسس تقني يجمع بين هندسة البرمجيات والأنظمة المدمجة الذكية.">Full-Stack Developer & CTO bridging modern software engineering with intelligent embedded systems.</p>
             </div>
             <img class="hero-cube" src="assets/cube-3d.png" alt="3D Geometric Cube" />
           </div>
