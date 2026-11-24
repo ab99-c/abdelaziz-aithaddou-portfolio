@@ -1,12 +1,15 @@
 {
   "username": "ab99-c",
   "name": "Abdelaziz Ait-Haddou",
-  "title": "Full-Stack Developer & CTO",
-  "commitsCount": "7,130+",
-  "clientsCount": "100+",
+  "title": "Full-Stack & AI Systems Engineer",
+  "totalCommits": "7130",
+  "clientsCount": "100",
+  "systemsCount": "7+",
+  "delivery": "End-to-End",
+  "timezone": "US/EU Aligned",
   "publicRepos": 7,
   "followers": 12,
-  "status": "Available for Global Remote & Relocation",
-  "focus": "React · tRPC · Node.js · Python · Unity · Embedded AI (ESP32)",
-  "mode": "static-fallback"
+  "status": "Available for work",
+  "focus": "React · tRPC · Node.js · Python 3.14 · Unity · Embedded AI (ESP32)",
+  "mode": "verified-metrics"
 }

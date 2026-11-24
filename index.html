@@ -4,19 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#07090e" />
-  <title>Abdelaziz Ait-Haddou — Full-Stack Developer & CTO | AI & Systems Builder</title>
-  <meta name="description" content="Portfolio of Abdelaziz Ait-Haddou — 0-to-1 Full-Stack Developer & CTO with 7,130+ commits and 100+ clients. Building from React, Vite, Node.js, tRPC & Python 3.14 to Unity, Three.js, ESP32, and 3D printing. Open to US/EU remote and relocation." />
+  <title>Abdelaziz Ait-Haddou — Full-Stack & AI Systems Engineer</title>
+  <meta name="description" content="Portfolio of Abdelaziz Ait-Haddou — Full-Stack & AI Systems Engineer. Building production web platforms (React, tRPC, Node.js, Python), local RAG AI agents, and embedded IoT systems (ESP32, Arduino, 3D printing). Open to US/EU remote roles and relocation." />
   <meta name="author" content="Abdelaziz Ait-Haddou" />
   
   <!-- Open Graph / Social Sharing -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://abdelaziz-aithaddou-portfolio.vercel.app/" />
-  <meta property="og:title" content="Abdelaziz Ait-Haddou — Full-Stack Developer & CTO" />
-  <meta property="og:description" content="0-to-1 Full-Stack Developer & CTO with 7,130+ commits. Building intelligent digital experiences from pixels to hardware. Open to global remote & relocation." />
+  <meta property="og:title" content="Abdelaziz Ait-Haddou — Full-Stack & AI Systems Engineer" />
+  <meta property="og:description" content="Full-Stack & AI Systems Engineer building end-to-end production systems from pixels to hardware. Open to global remote & relocation." />
   <meta property="og:image" content="https://abdelaziz-aithaddou-portfolio.vercel.app/assets/bento-reference.webp" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Abdelaziz Ait-Haddou — Full-Stack Developer & CTO" />
-  <meta name="twitter:description" content="Building intelligent digital experiences from pixels to hardware. React, tRPC, Python, Unity, ESP32." />
+  <meta name="twitter:title" content="Abdelaziz Ait-Haddou — Full-Stack & AI Systems Engineer" />
+  <meta name="twitter:description" content="Building production web platforms, distributed APIs, and embedded IoT hardware. React, tRPC, Python, Three.js, ESP32." />
   <meta name="twitter:image" content="https://abdelaziz-aithaddou-portfolio.vercel.app/assets/bento-reference.webp" />
 
   <!-- Canonical & Fonts -->
@@ -25,14 +25,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- JSON-LD Structured Data Schema for High Technical SEO & Hiring Match -->
+  <!-- JSON-LD Structured Data Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Abdelaziz Ait-Haddou",
-    "jobTitle": "Full-Stack Developer & Chief Technology Officer (CTO)",
-    "description": "0-to-1 Full-Stack Developer and CTO with 7,130+ commits and 100+ clients. Building distributed web applications, type-safe APIs, local RAG AI agents, and embedded IoT systems.",
+    "jobTitle": "Full-Stack & AI Systems Engineer",
+    "description": "Full-Stack & AI Systems Engineer delivering production web platforms, type-safe distributed APIs, local RAG AI agents, and embedded IoT hardware systems.",
     "url": "https://abdelaziz-aithaddou-portfolio.vercel.app/",
     "sameAs": [
       "https://github.com/ab99-c",
@@ -45,10 +45,6 @@
       "Unity WebGL", "Three.js", "Blender 3D", "Arduino", "ESP32", "OpenSCAD", "3D Printing",
       "AI Retrieval-Augmented Generation", "SQLite Vector Storage", "Enterprise ERP Architecture",
       "Stripe Payments", "PostgreSQL", "Drizzle ORM"
-    ],
-    "alumniOf": [
-      { "@type": "EducationalOrganization", "name": "ESIAS Errachidia" },
-      { "@type": "EducationalOrganization", "name": "GLOGIST" }
     ],
     "workLocation": {
       "@type": "Country",
@@ -211,6 +207,7 @@
       cursor: pointer;
       transition: all 0.2s;
       font-weight: 600;
+      text-decoration: none;
     }
     .lang-btn:hover {
       background: rgba(255, 255, 255, 0.09);
@@ -257,7 +254,7 @@
 
     /* Card 1: Hero Card */
     .hero-card {
-      min-height: 220px;
+      min-height: 200px;
       background: radial-gradient(circle at 90% 10%, rgba(56, 189, 248, 0.05) 0%, var(--card-bg) 60%);
     }
     .hero-flex {
@@ -269,7 +266,7 @@
     .hero-title {
       font-size: 26px;
       font-weight: 800;
-      line-height: 1.2;
+      line-height: 1.25;
       letter-spacing: -0.03em;
       margin: 0 0 12px;
       color: #fff;
@@ -278,16 +275,26 @@
       font-size: 13px;
       line-height: 1.6;
       color: var(--text-muted);
-      margin: 0 0 14px;
-      max-width: 400px;
+      margin: 0;
+      max-width: 410px;
+    }
+    .cube-box {
+      width: 82px;
+      height: 82px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08);
     }
     .hero-cube {
-      width: 78px;
-      height: 78px;
-      flex-shrink: 0;
-      border-radius: 14px;
+      width: 62px;
+      height: 62px;
       object-fit: contain;
-      filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.5));
+      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
       animation: float-cube 4s ease-in-out infinite;
     }
 
@@ -338,6 +345,7 @@
       font-size: 12.5px;
       color: var(--text-muted);
       margin: 4px 0 0;
+      line-height: 1.5;
     }
 
     .card-image-wrap {
@@ -358,6 +366,30 @@
     }
     .bento-card:hover .card-img {
       transform: scale(1.02);
+    }
+
+    /* ADRAR AI NANO Clean Image Frame */
+    .wearable-image-wrap {
+      overflow: hidden;
+      height: 142px;
+      position: relative;
+      border-radius: 12px;
+      background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.14) 0%, #0d111a 80%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      margin-bottom: 12px;
+    }
+    .wearable-img-crop {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center bottom;
+      transform: scale(1.12);
+      transform-origin: center bottom;
+      display: block;
+      transition: transform 0.3s var(--ease);
+    }
+    .wearable-card:hover .wearable-img-crop {
+      transform: scale(1.18);
     }
 
     /* Pill Tags */
@@ -381,14 +413,21 @@
       border-color: rgba(255, 255, 255, 0.15);
     }
 
+    /* Action Buttons Row */
+    .action-buttons-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
     .case-study-btn {
-      margin-inline-start: auto;
-      font-size: 11px;
+      font-size: 11.5px;
       font-weight: 600;
       color: var(--cyan);
       background: rgba(56, 189, 248, 0.1);
       border: 1px solid rgba(56, 189, 248, 0.25);
-      padding: 3px 10px;
+      padding: 4px 12px;
       border-radius: 100px;
       cursor: pointer;
       display: inline-flex;
@@ -400,6 +439,41 @@
       background: var(--cyan);
       color: #07090e;
       border-color: var(--cyan);
+      transform: translateY(-1px);
+    }
+
+    .ext-btn {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 100px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s var(--ease);
+    }
+    .btn-live {
+      color: var(--green);
+      background: rgba(52, 211, 153, 0.1);
+      border: 1px solid rgba(52, 211, 153, 0.28);
+    }
+    .btn-live:hover {
+      background: var(--green);
+      color: #07090e;
+      border-color: var(--green);
+      transform: translateY(-1px);
+    }
+    .btn-github {
+      color: #cbd5e1;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .btn-github:hover {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.25);
+      transform: translateY(-1px);
     }
 
     .assistant-pill {
@@ -413,7 +487,7 @@
       border: 1px solid rgba(56, 189, 248, 0.25);
       border-radius: 100px;
       padding: 3px 10px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       width: fit-content;
     }
     .assistant-dot {
@@ -426,47 +500,46 @@
 
     /* Selected Works Card */
     .works-card {
-      background: linear-gradient(135deg, rgba(22, 42, 50, 0.75) 0%, rgba(14, 25, 34, 0.95) 100%);
-      border-color: rgba(52, 211, 153, 0.22);
-      min-height: 115px;
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.25) 0%, rgba(20, 184, 166, 0.25) 50%, rgba(15, 23, 42, 0.6) 100%), #101c1c;
+      border: 1px solid rgba(52, 211, 153, 0.35);
+      border-radius: 20px;
+      min-height: 98px;
       cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 18px 20px;
+      transition: all 0.25s var(--ease);
+    }
+    .works-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(52, 211, 153, 0.6);
+      box-shadow: 0 10px 28px rgba(16, 185, 129, 0.2);
     }
     .works-head {
-      font-size: 10.5px;
+      font-size: 11px;
       font-weight: 700;
-      letter-spacing: 0.06em;
-      color: #5eead4;
+      letter-spacing: 0.08em;
+      color: #a7f3d0;
       text-transform: uppercase;
       font-family: "DM Mono", monospace;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .live-sync-indicator {
-      font-size: 9px;
-      color: var(--green);
-      background: rgba(52, 211, 153, 0.12);
-      padding: 2px 6px;
-      border-radius: 4px;
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
     }
     .works-num-row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 8px;
+      margin-top: 6px;
     }
     .works-num {
       font-size: 32px;
-      font-weight: 700;
-      color: #5eead4;
+      font-weight: 800;
+      color: #6ee7b7;
       line-height: 1;
+      font-family: "Plus Jakarta Sans", sans-serif;
     }
     .works-arrow {
-      font-size: 22px;
-      color: #5eead4;
+      font-size: 24px;
+      color: #6ee7b7;
       transition: transform 0.25s var(--ease);
     }
     .works-card:hover .works-arrow {
@@ -475,13 +548,17 @@
 
     /* Tech Stack Badges */
     .stack-card {
-      min-height: 270px;
+      min-height: 250px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .stack-badges {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      padding: 8px 0;
+      gap: 10px 8px;
+      padding: 10px 0 6px;
       align-items: center;
       justify-content: center;
     }
@@ -489,44 +566,59 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 5px 12px;
-      border-radius: 100px;
-      font-size: 11.5px;
+      padding: 6px 14px;
+      border-radius: 12px;
+      font-size: 12.5px;
       font-weight: 600;
       border: 1px solid;
       transition: transform 0.25s var(--ease), box-shadow 0.25s;
       cursor: default;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
     }
     .neon-badge:hover {
-      transform: scale(1.08) translateY(-2px);
+      transform: scale(1.1) rotate(0deg) !important;
+      z-index: 5;
     }
 
-    .badge-vite { color: #e9d5ff; border-color: rgba(168, 85, 247, 0.5); background: rgba(168, 85, 247, 0.08); box-shadow: 0 0 12px rgba(168, 85, 247, 0.2); transform: rotate(-3deg); }
-    .badge-react { color: #bae6fd; border-color: rgba(56, 189, 248, 0.6); background: rgba(56, 189, 248, 0.1); box-shadow: 0 0 16px rgba(56, 189, 248, 0.3); transform: rotate(3deg); }
-    .badge-trpc { color: #93c5fd; border-color: rgba(59, 130, 246, 0.5); background: rgba(59, 130, 246, 0.08); box-shadow: 0 0 12px rgba(59, 130, 246, 0.25); transform: rotate(-1deg); }
-    .badge-python { color: #fef08a; border-color: rgba(250, 204, 21, 0.5); background: rgba(250, 204, 21, 0.08); box-shadow: 0 0 14px rgba(250, 204, 21, 0.2); transform: rotate(-2deg); }
-    .badge-node { color: #bbf7d0; border-color: rgba(34, 197, 94, 0.5); background: rgba(34, 197, 94, 0.08); box-shadow: 0 0 14px rgba(34, 197, 94, 0.2); transform: rotate(4deg); }
-    .badge-three { color: #99f6e4; border-color: rgba(45, 212, 191, 0.5); background: rgba(45, 212, 191, 0.08); box-shadow: 0 0 14px rgba(45, 212, 191, 0.2); transform: rotate(-4deg); }
-    .badge-arduino { color: #a5f3fc; border-color: rgba(6, 182, 212, 0.5); background: rgba(6, 182, 212, 0.08); box-shadow: 0 0 12px rgba(6, 182, 212, 0.2); transform: rotate(2deg); }
-    .badge-esp { color: #fed7aa; border-color: rgba(249, 115, 22, 0.5); background: rgba(249, 115, 22, 0.08); box-shadow: 0 0 14px rgba(249, 115, 22, 0.2); transform: rotate(-3deg); }
+    .badge-vite { color: #e9d5ff; border-color: rgba(168, 85, 247, 0.45); background: rgba(168, 85, 247, 0.12); box-shadow: 0 0 14px rgba(168, 85, 247, 0.28); transform: rotate(-3deg); }
+    .badge-react { color: #bae6fd; border-color: rgba(56, 189, 248, 0.5); background: rgba(56, 189, 248, 0.12); box-shadow: 0 0 16px rgba(56, 189, 248, 0.32); transform: rotate(3deg); }
+    .badge-python { color: #fef08a; border-color: rgba(250, 204, 21, 0.45); background: rgba(250, 204, 21, 0.12); box-shadow: 0 0 14px rgba(250, 204, 21, 0.25); transform: rotate(-2deg); }
+    .badge-node { color: #bbf7d0; border-color: rgba(34, 197, 94, 0.45); background: rgba(34, 197, 94, 0.12); box-shadow: 0 0 14px rgba(34, 197, 94, 0.25); transform: rotate(4deg); }
+    .badge-three { color: #a5f3fc; border-color: rgba(6, 182, 212, 0.45); background: rgba(6, 182, 212, 0.12); box-shadow: 0 0 14px rgba(6, 182, 212, 0.25); transform: rotate(-3deg); }
+    .badge-arduino { color: #99f6e4; border-color: rgba(20, 184, 166, 0.45); background: rgba(20, 184, 166, 0.12); box-shadow: 0 0 14px rgba(20, 184, 166, 0.25); transform: rotate(2deg); }
+    .badge-esp { color: #fed7aa; border-color: rgba(249, 115, 22, 0.45); background: rgba(249, 115, 22, 0.12); box-shadow: 0 0 14px rgba(249, 115, 22, 0.25); transform: rotate(-3deg); }
 
     /* Experience Card */
     .exp-card {
-      min-height: 155px;
+      min-height: 145px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
-    .exp-stats {
+    .exp-stats-row {
       display: flex;
       align-items: center;
-      gap: 16px;
-      margin: 10px 0 16px;
-      color: var(--text-muted);
-      font-size: 13px;
-      font-weight: 500;
+      justify-content: space-around;
+      margin: 8px 0 12px;
     }
     .exp-stat-item {
-      display: inline-flex;
-      align-items: center;
+      display: flex;
+      align-items: baseline;
       gap: 6px;
+    }
+    .exp-stat-num {
+      font-size: 19px;
+      font-weight: 800;
+      color: #fff;
+      font-family: "DM Mono", monospace;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .exp-stat-lbl {
+      font-size: 12px;
+      color: #8c96a5;
     }
 
     .btn-build {
@@ -535,13 +627,13 @@
       justify-content: center;
       gap: 8px;
       width: 100%;
-      padding: 13px 18px;
+      padding: 11px 16px;
       background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
       color: #fff;
       font-size: 14px;
       font-weight: 700;
       border-radius: 12px;
-      border: 1px solid rgba(56, 189, 248, 0.4);
+      border: 1px solid rgba(56, 189, 248, 0.45);
       box-shadow: 0 0 25px rgba(2, 132, 199, 0.45);
       text-decoration: none;
       transition: all 0.25s var(--ease);
@@ -552,9 +644,15 @@
       box-shadow: 0 0 35px rgba(2, 132, 199, 0.7);
       transform: translateY(-2px);
     }
+    }
+    .btn-build:hover {
+      background: linear-gradient(135deg, #0369a1 0%, #0284c7 100%);
+      box-shadow: 0 0 35px rgba(2, 132, 199, 0.7);
+      transform: translateY(-2px);
+    }
 
-    /* Architecture Section */
-    .arch-section {
+    /* Section Common */
+    .content-section {
       margin-top: 40px;
       padding-top: 32px;
       border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -583,6 +681,7 @@
       letter-spacing: -0.02em;
     }
 
+    /* Architecture Grid */
     .arch-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -630,7 +729,6 @@
       margin: 0 0 16px;
     }
 
-    /* Diagram visual block */
     .flow-diagram {
       background: #090c12;
       border: 1px solid rgba(255, 255, 255, 0.06);
@@ -652,18 +750,13 @@
       font-weight: bold;
     }
 
-    /* Extra Works Section */
-    .extra-projects-wrap {
-      margin-top: 40px;
-      padding-top: 32px;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
-    }
-    .extra-grid {
+    /* Systems Grid (Flagship & R&D) */
+    .systems-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 16px;
     }
-    .extra-card {
+    .system-card {
       background: rgba(255, 255, 255, 0.02);
       border: 1px solid rgba(255, 255, 255, 0.07);
       border-radius: 16px;
@@ -673,25 +766,42 @@
       justify-content: space-between;
       transition: all 0.2s var(--ease);
     }
-    .extra-card:hover {
+    .system-card:hover {
       background: rgba(255, 255, 255, 0.04);
-      border-color: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.16);
       transform: translateY(-2px);
     }
-    .extra-name {
+    .system-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 6px;
+      gap: 8px;
+    }
+    .system-name {
       font-size: 16px;
       font-weight: 700;
       color: #fff;
-      margin: 0 0 6px;
+      margin: 0;
     }
-    .extra-desc {
+    .system-role {
+      font-size: 10.5px;
+      color: var(--cyan);
+      font-family: "DM Mono", monospace;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      background: rgba(56, 189, 248, 0.05);
+      padding: 2px 6px;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .system-desc {
       font-size: 12.5px;
       color: var(--text-muted);
       line-height: 1.55;
-      margin: 0 0 14px;
+      margin: 6px 0 14px;
     }
 
-    /* Case Study Modal Dialog */
+    /* Dialogs */
     dialog#case-study-dialog {
       background: #0d111a;
       color: #fff;
@@ -737,9 +847,7 @@
     }
     .close-modal-btn:hover { color: #fff; }
 
-    .case-section {
-      margin-bottom: 18px;
-    }
+    .case-section { margin-bottom: 18px; }
     .case-label {
       font-size: 11px;
       font-weight: 700;
@@ -837,33 +945,19 @@
     <header class="window-header">
       <div class="brand-group">
         <a class="brand-name" href="#home" data-en="Abdelaziz Ait-Haddou" data-ar="عبد العزيز أيت حدو">
-          Abdelaziz Ait-Haddou<span class="brand-dot">.</span>
+          Abdelaziz Ait-Haddou
         </a>
         <div class="status-pill">
           <span class="status-dot"></span>
-          <span data-en="Open to Global Remote & Relocation" data-ar="متاح للعمل عن بُعد والهجرة (عالمياً)">Open to Global Remote & Relocation</span>
+          <span data-en="Available for work" data-ar="متاح للعمل">Available for work</span>
         </div>
       </div>
 
       <nav class="nav-group">
         <a class="nav-item" href="#about" data-en="About" data-ar="نبذة">About</a>
         <a class="nav-item" href="#projects" data-en="Projects" data-ar="المشاريع">Projects</a>
-        <a class="nav-item" href="#architecture" data-en="Architecture" data-ar="المعمارية">Architecture</a>
         <a class="nav-item" href="#stack" data-en="Stack" data-ar="التقنيات">Stack</a>
-        <a class="nav-item" href="/cv" data-en="CV Résumé ↗" data-ar="السيرة الذاتية ↗">CV Résumé ↗</a>
-        
-        <!-- Social & Direct Contact Icons -->
-        <a class="social-link" href="https://github.com/ab99-c" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile (ab99-c)" title="GitHub (ab99-c)">
-          <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        </a>
-        <a class="social-link" href="https://www.linkedin.com/in/aithaddou-abdelaziz-806753424" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn Profile">
-          <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-        </a>
-        <a class="social-link" href="mailto:azizaithaddou877@gmail.com" aria-label="Direct Email" title="Email: azizaithaddou877@gmail.com">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        </a>
-
-        <button class="nav-item" id="contact-nav-trigger" style="background:none; border:none; cursor:pointer;" data-en="Contact" data-ar="تواصل">Contact</button>
+        <a class="nav-item" href="#contact" id="contact-nav-trigger" data-en="Contact" data-ar="تواصل">Contact</a>
         <button class="lang-btn" id="lang-toggle" aria-label="Toggle language">عربي</button>
       </nav>
     </header>
@@ -877,39 +971,36 @@
         <article class="bento-card hero-card" id="about">
           <div class="hero-flex">
             <div>
-              <h1 class="hero-title" data-en="Building intelligent digital experiences, from pixels to hardware." data-ar="نبني تجارب رقمية ذكية، من البكسل إلى العتاد.">Building intelligent digital experiences, from pixels to hardware.</h1>
-              <p class="hero-sub" data-en="0-to-1 Full-Stack Engineer, Systems Builder & CTO with 7,130+ commits and 100+ clients. Architecting distributed APIs (tRPC, Node, Python 3.14), local RAG AI agents, and IoT hardware (ESP32, Arduino, 3D printing)." data-ar="مطور Full-Stack ومؤسس تقني يملك أكثر من 7,130 تعديلاً و100+ عميل. متخصص في بناء المنصات الموزعة، الذكاء الاصطناعي، والعتاد الذكي.">0-to-1 Full-Stack Engineer, Systems Builder & CTO with 7,130+ commits and 100+ clients. Architecting distributed APIs (tRPC, Node, Python 3.14), local RAG AI agents, and IoT hardware (ESP32, Arduino, 3D printing).</p>
-              <div class="role-badges-row">
-                <span class="role-tag">Global Remote (US/EU)</span>
-                <span class="role-tag">Senior Full-Stack</span>
-                <span class="role-tag">CTO & Lead Architect</span>
-                <span class="role-tag">Relocation / Visa OK</span>
-              </div>
+              <h1 class="hero-title" data-en="Building intelligent digital experiences, from pixels to hardware." data-ar="بناء تجارب رقمية ذكية، من البكسل إلى العتاد.">Building intelligent digital experiences, from pixels to hardware.</h1>
+              <p class="hero-sub" data-en="Full-Stack Developer & CTO in software engineering, crafting resilient platforms, distributed APIs, and embedded IoT hardware." data-ar="مطور ويب شامل ومدير تقني، أصمم منصات سحابية وأنظمة إنترنت أشياء متكاملة من البرمجيات إلى العتاد.">Full-Stack Developer & CTO in software engineering, crafting resilient platforms, distributed APIs, and embedded IoT hardware.</p>
             </div>
-            <img class="hero-cube" src="assets/cube-3d.png" alt="3D Geometric Cube" />
+            <div class="cube-box">
+              <img class="hero-cube" src="assets/cube-3d.png" alt="3D Geometric Cube" />
+            </div>
           </div>
         </article>
 
         <!-- Adrar Tourisme Card -->
-        <article class="bento-card adrar-card">
+        <article class="bento-card adrar-card" data-project="adrar" style="cursor: pointer;">
           <div>
             <div class="card-head">
               <div class="title-row">
                 <h2 class="card-title" data-en="Adrar Tourisme" data-ar="أدرار للسياحة">Adrar Tourisme</h2>
                 <span class="badge-pill" data-en="Co-Founder & CTO" data-ar="مؤسس مشارك ومدير تقني">Co-Founder & CTO</span>
               </div>
-              <p class="card-sub" data-en="Travel & E-Commerce Platform · End-to-End Booking & Payments" data-ar="منصة سياحية وتجارة إلكترونية متكاملة">Travel & E-Commerce Platform · End-to-End Booking & Payments</p>
+              <p class="card-sub" data-en="Travel & E-Commerce Platform" data-ar="منصة سياحية وتجارة إلكترونية">Travel & E-Commerce Platform</p>
             </div>
             <div class="card-image-wrap">
               <img class="card-img" src="assets/adrar-ui.png" alt="Adrar Tourisme platform interface preview" />
             </div>
           </div>
-          <div class="tags-row">
-            <span class="tag-pill">React</span>
-            <span class="tag-pill">tRPC</span>
-            <span class="tag-pill">Vite</span>
-            <span class="tag-pill">Stripe</span>
-            <button class="case-study-btn" data-project="adrar">Case Study ➔</button>
+          <div>
+            <div class="tags-row">
+              <span class="tag-pill">React</span>
+              <span class="tag-pill">tRPC</span>
+              <span class="tag-pill">Vite</span>
+              <span class="tag-pill">Stripe</span>
+            </div>
           </div>
         </article>
       </div>
@@ -917,64 +1008,65 @@
       <!-- Column 2 (Middle): 3D Library + AI Wearable -->
       <div class="bento-col">
         <!-- 3D Virtual Library -->
-        <article class="bento-card library-card">
+        <article class="bento-card library-card" data-project="library" style="cursor: pointer;">
           <div>
             <div class="card-head">
-              <h2 class="card-title" data-en="3D Virtual Library" data-ar="المكتبة الافتراضية 3D">3D Virtual Library</h2>
-              <p class="card-sub" data-en="EdTech & Interactive Simulation · 60 FPS WebGL Engine" data-ar="تكنولوجيا التعليم والمحاكاة التفاعلية ثلاثية الأبعاد">EdTech & Interactive Simulation · 60 FPS WebGL Engine</p>
+              <div class="title-row">
+                <h2 class="card-title" data-en="3D Virtual Library" data-ar="المكتبة الافتراضية 3D">3D Virtual Library</h2>
+              </div>
+              <p class="card-sub" data-en="EdTech & Simulation" data-ar="تعليم تفاعلي ومحاكاة">EdTech & Simulation</p>
             </div>
             <div class="card-image-wrap" style="background: radial-gradient(circle at 40% 60%, rgba(213, 243, 106, 0.12) 0%, transparent 60%);">
               <img class="card-img" src="assets/library-3d.png" alt="3D Virtual Library scene preview" />
             </div>
           </div>
-          <div class="tags-row">
-            <span class="tag-pill">Unity</span>
-            <span class="tag-pill">Three.js</span>
-            <span class="tag-pill">Blender</span>
-            <button class="case-study-btn" data-project="library">Case Study ➔</button>
+          <div>
+            <div class="tags-row">
+              <span class="tag-pill">Unity</span>
+              <span class="tag-pill">Three.js</span>
+              <span class="tag-pill">Blender</span>
+            </div>
           </div>
         </article>
 
         <!-- AI Wearable Device -->
-        <article class="bento-card wearable-card">
+        <article class="bento-card wearable-card" data-project="wearable" style="cursor: pointer;">
           <div>
             <div class="card-head">
-              <h2 class="card-title" data-en="AI Wearable Device" data-ar="جهاز ذكاء اصطناعي قابل للارتداء">AI Wearable Device</h2>
-              <p class="card-sub" data-en="IoT & Embedded AI Wearable · Custom Enclosure & Sensor Suite" data-ar="جهاز عتاد ذكي مدمج مع مستشعرات وهيكل ثلاثي الأبعاد">IoT & Embedded AI Wearable · Custom Enclosure & Sensor Suite</p>
+              <div class="title-row">
+                <h2 class="card-title" data-en="AI Wearable Device" data-ar="جهاز ذكاء اصطناعي قابل للارتداء">AI Wearable Device</h2>
+              </div>
+              <p class="card-sub" data-en="IoT & Embedded AI Wearable" data-ar="عتاد مدمج وذكاء اصطناعي">IoT & Embedded AI Wearable</p>
             </div>
-            <div class="card-image-wrap" style="background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.15) 0%, transparent 70%);">
-              <img class="card-img" src="assets/wearable-device.png" alt="ADRAR AI NANO device photo" />
-            </div>
-            <div class="assistant-pill">
-              <span class="assistant-dot"></span>
-              <span data-en="ADRAR AI NANO · Embedded Assistant" data-ar="المساعد المدمج ADRAR AI NANO">ADRAR AI NANO · Embedded Assistant</span>
+            <div class="card-image-wrap wearable-wrap">
+              <img class="card-img wearable-img" src="assets/wearable-device.png" alt="ADRAR AI NANO AI Wearable Device" />
             </div>
           </div>
-          <div class="tags-row">
-            <span class="tag-pill">Arduino</span>
-            <span class="tag-pill">ESP32</span>
-            <span class="tag-pill">OpenSCAD</span>
-            <span class="tag-pill">3D Printing</span>
-            <button class="case-study-btn" data-project="wearable">Case Study ➔</button>
+          <div>
+            <div class="tags-row">
+              <span class="tag-pill">Arduino</span>
+              <span class="tag-pill">ESP32</span>
+              <span class="tag-pill">OpenSCAD</span>
+              <span class="tag-pill">3D Printing</span>
+            </div>
           </div>
         </article>
       </div>
 
-      <!-- Column 3 (Right): Works Counter + Tech Stack + Experience/Contact -->
+      <!-- Column 3 (Right): Works Counter + Tech Stack + Experience -->
       <div class="bento-col" id="stack">
-        <!-- Selected Works Counter & Live GitHub Sync -->
+        <!-- Selected Works Counter (3) -->
         <article class="bento-card works-card" id="toggle-extra-works">
           <div class="works-head">
             <span data-en="SELECTED WORKS" data-ar="الأعمال المختارة">SELECTED WORKS</span>
-            <span class="live-sync-indicator" id="sync-status">⚡ Live Synced</span>
           </div>
           <div class="works-num-row">
-            <span class="works-num" id="repo-count-display">(7)</span>
+            <span class="works-num">(3)</span>
             <span class="works-arrow" aria-hidden="true">→</span>
           </div>
         </article>
 
-        <!-- Tech Stack -->
+        <!-- Tech Stack (Glowing angled pills) -->
         <article class="bento-card stack-card">
           <div class="card-head">
             <h2 class="card-title" data-en="Tech Stack" data-ar="التقنيات">Tech Stack</h2>
@@ -982,8 +1074,7 @@
           <div class="stack-badges">
             <span class="neon-badge badge-vite">⚡ Vite</span>
             <span class="neon-badge badge-react">⚛ React</span>
-            <span class="neon-badge badge-trpc">▲ tRPC</span>
-            <span class="neon-badge badge-python">🐍 Python 3.14</span>
+            <span class="neon-badge badge-python">🐍 Python</span>
             <span class="neon-badge badge-node">⬢ Node.js</span>
             <span class="neon-badge badge-three">▲ Three.js</span>
             <span class="neon-badge badge-arduino">♾ Arduino</span>
@@ -991,33 +1082,45 @@
           </div>
         </article>
 
-        <!-- Experience & Let's Build CTA -->
+        <!-- Experience & Stats -->
         <article class="bento-card exp-card">
           <div>
             <div class="card-head">
-              <h2 class="card-title" data-en="Experience & Stats" data-ar="الخبرة والأرقام">Experience & Stats</h2>
+              <h2 class="card-title" data-en="Experience" data-ar="الخبرة">Experience</h2>
             </div>
-            <div class="exp-stats">
-              <span class="exp-stat-item">📊 <strong id="commit-stat">7,130+</strong> <small style="font-size:10px; color:var(--text-subtle);">commits</small></span>
-              <span class="exp-stat-item">👥 <strong id="client-stat">100+</strong> <small style="font-size:10px; color:var(--text-subtle);">clients</small></span>
+            <div class="exp-stats-row">
+              <div class="exp-stat-item">
+                <span class="exp-stat-num">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="opacity: 0.7;"><path d="M5 9.2h3V19H5zM10.6 5h2.8v14.2h-2.8zm5.6 8h2.8v6.2h-2.8z"/></svg>
+                  7130
+                </span>
+                <span class="exp-stat-lbl" data-en="commits" data-ar="تعديل برمجي">commits</span>
+              </div>
+              <div class="exp-stat-item">
+                <span class="exp-stat-num">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="opacity: 0.7;"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                  100
+                </span>
+                <span class="exp-stat-lbl" data-en="clients" data-ar="عميل ومؤسسة">clients</span>
+              </div>
             </div>
           </div>
           <button class="btn-build" id="open-contact-modal">
-            <span data-en="Let's build together" data-ar="لنبنِ معاً">Let's build together</span>
-            <span aria-hidden="true">↗</span>
+            <span data-en="Let's build" data-ar="لنبدأ البناء">Let's build</span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="transform: rotate(-45deg);"><path d="M3 3l7 18 3-7 7-3L3 3z"/></svg>
           </button>
         </article>
       </div>
     </main>
 
-    <!-- NEW SECTION: Backend, System Architecture & Hardware/3D Bridge -->
-    <section class="arch-section" id="architecture">
+    <!-- SYSTEM ARCHITECTURE & DATA FLOW (Kept 100% Intact as Differentiator) -->
+    <section class="content-section" id="architecture">
       <div class="section-header-row">
         <div>
           <div class="sec-tag" data-en="// System Architecture & Data Flow" data-ar="// المعمارية وهندسة تدفق البيانات">// System Architecture & Data Flow</div>
           <h2 class="sec-heading" data-en="How My Systems Connect: From Pixels to Hardware" data-ar="كيف تتكامل الأنظمة: من واجهة الويب إلى العتاد الصلب">How My Systems Connect: From Pixels to Hardware</h2>
         </div>
-        <a href="/cv" class="lang-btn" data-en="View Full Technical Résumé" data-ar="عرض السيرة الذاتية الكاملة">View Full Technical Résumé</a>
+        <a href="assets/CV-Abdelaziz-Ait-Haddou.pdf" target="_blank" rel="noopener noreferrer" class="lang-btn" data-en="View Full Technical Résumé (PDF) ↗" data-ar="عرض السيرة الذاتية الكاملة (PDF) ↗">View Full Technical Résumé (PDF) ↗</a>
       </div>
 
       <div class="arch-grid">
@@ -1068,66 +1171,187 @@
       </div>
     </section>
 
-    <!-- Additional GitHub Systems & Case Studies -->
-    <section class="extra-projects-wrap" id="extra-works">
+    <!-- SECTION: Flagship Production Systems -->
+    <section class="content-section" id="flagship-systems">
       <div class="section-header-row">
         <div>
-          <div class="sec-tag" data-en="// Additional Systems" data-ar="// أنظمة ومشاريع برمجية أخرى">// Additional Systems</div>
-          <h2 class="sec-heading" data-en="Specialized Production Platforms" data-ar="منصات برمجية وأنظمة إنتاجية">Specialized Production Platforms</h2>
+          <div class="sec-tag" data-en="// Core Engineering" data-ar="// الإنتاج البرمجي الرئيسي">// Core Engineering</div>
+          <h2 class="sec-heading" data-en="Flagship Production Systems" data-ar="أنظمة الإنتاج البرمجي الرئيسية">Flagship Production Systems</h2>
         </div>
-        <a href="https://github.com/ab99-c" target="_blank" rel="noopener noreferrer" class="lang-btn" data-en="View All Repos on GitHub (ab99-c) ↗" data-ar="عرض المستودعات على GitHub (ab99-c) ↗">View All Repos on GitHub (ab99-c) ↗</a>
+        <span class="badge-pill" data-en="Live Production & Scaled Architecture" data-ar="أنظمة منشورة ومعمارية قابلة للتوسع">Live Production & Scaled Architecture</span>
       </div>
 
-      <div class="extra-grid">
-        <div class="extra-card">
+      <div class="systems-grid">
+        <!-- Dhikra -->
+        <div class="system-card">
           <div>
-            <h3 class="extra-name" data-en="Dhikra (ذِكْرى)" data-ar="ذِكْرى (Dhikra)">Dhikra (ذِكْرى)</h3>
-            <p class="extra-desc" data-en="AI Personal Memory Assistant with Darija chatbot & local RAG SQLite storage for complete privacy." data-ar="مساعد ذاكرة شخصي ذكي مع شاتبوت بالدارجة وتخزين محلي آمن.">AI Personal Memory Assistant with Darija chatbot & local RAG SQLite storage for complete privacy.</p>
+            <div class="system-title-row">
+              <h3 class="system-name" data-en="Dhikra (ذِكْرى)" data-ar="ذِكْرى (Dhikra)">Dhikra (ذِكْرى)</h3>
+              <span class="system-role">Mobile & AI</span>
+            </div>
+            <p class="system-desc" data-en="Built 100% private offline-first personal memory assistant with on-device SQLite vector embeddings and sub-15ms Darija RAG search." data-ar="مساعد ذاكرة شخصي ذكي مع شاتبوت بالدارجة وتخزين متجهي محلي بـ SQLite دون إرسال البيانات للخوادم.">Built 100% private offline-first personal memory assistant with on-device SQLite vector embeddings and sub-15ms Darija RAG search.</p>
           </div>
-          <div class="tags-row">
-            <span class="tag-pill">React Native</span>
-            <span class="tag-pill">AI RAG</span>
-            <span class="tag-pill">SQLite</span>
-            <button class="case-study-btn" data-project="dhikra">Deep Dive ➔</button>
+          <div>
+            <div class="tags-row">
+              <span class="tag-pill">React Native</span>
+              <span class="tag-pill">AI RAG</span>
+              <span class="tag-pill">SQLite</span>
+              <span class="tag-pill">Expo</span>
+            </div>
+            <div class="action-buttons-row">
+              <button class="case-study-btn" data-project="dhikra">Case Study ➔</button>
+              <a class="ext-btn btn-github" href="https://github.com/ab99-c/dhikra-app" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
           </div>
         </div>
 
-        <div class="extra-card">
+        <!-- NASSIRI ERP -->
+        <div class="system-card">
           <div>
-            <h3 class="extra-name" data-en="Jarida Flipbook" data-ar="جريدة الأفق (Jarida)">Jarida Flipbook</h3>
-            <p class="extra-desc" data-en="Vintage 3D interactive newspaper simulation with automated news ingestion & publishing." data-ar="صحيفة رقمية تفاعلية تحاكي الجرائد الكلاسيكية القديمة مع تجميع آلي للأخبار.">Vintage 3D interactive newspaper simulation with automated news ingestion & publishing.</p>
+            <div class="system-title-row">
+              <h3 class="system-name" data-en="NASSIRI ERP" data-ar="نظام ERP الناصري">NASSIRI ERP</h3>
+              <span class="system-role">Enterprise Systems</span>
+            </div>
+            <p class="system-desc" data-en="Developed transactional ERP platform unifying multi-warehouse inventory auditing and billing with zero stock discrepancies and ACID reliability." data-ar="منظومة متكاملة لتخطيط الموارد، الفوترة وإدارة المخزون بدقة علائقية متوافقة مع معايير ACID.">Developed transactional ERP platform unifying multi-warehouse inventory auditing and billing with zero stock discrepancies and ACID reliability.</p>
           </div>
-          <div class="tags-row">
-            <span class="tag-pill">TypeScript</span>
-            <span class="tag-pill">3D Turn</span>
-            <span class="tag-pill">Vite</span>
-            <button class="case-study-btn" data-project="jarida">Deep Dive ➔</button>
+          <div>
+            <div class="tags-row">
+              <span class="tag-pill">ERP</span>
+              <span class="tag-pill">Full-Stack</span>
+              <span class="tag-pill">PostgreSQL / SQL</span>
+              <span class="tag-pill">Accounting</span>
+            </div>
+            <div class="action-buttons-row">
+              <button class="case-study-btn" data-project="nassiri">Case Study ➔</button>
+              <a class="ext-btn btn-github" href="https://github.com/ab99-c/NASSIRI" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
           </div>
         </div>
 
-        <div class="extra-card">
+        <!-- Adrar Tourisme (Linked) -->
+        <div class="system-card">
           <div>
-            <h3 class="extra-name" data-en="Qahwati (قهوتي)" data-ar="قهوتي (Qahwati)">Qahwati (قهوتي)</h3>
-            <p class="extra-desc" data-en="Café management suite with real-time web dashboard & Expo mobile app for orders & inventory." data-ar="منصة متكاملة لإدارة المقاهي والطلبات مع تطبيق هاتف ولوحة تحكم.">Café management suite with real-time web dashboard & Expo mobile app for orders & inventory.</p>
+            <div class="system-title-row">
+              <h3 class="system-name" data-en="Adrar Tourisme" data-ar="أدرار للسياحة">Adrar Tourisme</h3>
+              <span class="system-role">Co-Founder & CTO</span>
+            </div>
+            <p class="system-desc" data-en="Scalable commerce architecture with type-safe tRPC RPCs, dynamic calendar reservations, and multi-party guide verification." data-ar="معمارية تجارة إلكترونية آمنة برمجياً مع حجز فوري ومعالجة مدفوعات رقمية.">Scalable commerce architecture with type-safe tRPC RPCs, dynamic calendar reservations, and multi-party guide verification.</p>
           </div>
-          <div class="tags-row">
-            <span class="tag-pill">Expo</span>
-            <span class="tag-pill">React Native</span>
-            <span class="tag-pill">REST</span>
-            <button class="case-study-btn" data-project="qahwati">Deep Dive ➔</button>
+          <div>
+            <div class="tags-row">
+              <span class="tag-pill">React</span>
+              <span class="tag-pill">tRPC</span>
+              <span class="tag-pill">Stripe</span>
+              <span class="tag-pill">PostgreSQL</span>
+            </div>
+            <div class="action-buttons-row">
+              <button class="case-study-btn" data-project="adrar">Case Study ➔</button>
+              <a class="ext-btn btn-live" href="https://www.adrar-tourism.ma" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+            </div>
           </div>
         </div>
 
-        <div class="extra-card">
+        <!-- 3D Virtual Library -->
+        <div class="system-card">
           <div>
-            <h3 class="extra-name" data-en="NASSIRI ERP" data-ar="نظام ERP الناصري">NASSIRI ERP</h3>
-            <p class="extra-desc" data-en="Enterprise resource management platform for billing, inventory, supply chain, and operations." data-ar="نظام تخطيط موارد المؤسسات لتتبع المخزون والعمليات المحاسبية.">Enterprise resource management platform for billing, inventory, supply chain, and operations.</p>
+            <div class="system-title-row">
+              <h3 class="system-name" data-en="3D Virtual Library" data-ar="المكتبة الافتراضية 3D">3D Virtual Library</h3>
+              <span class="system-role">WebGL & EdTech</span>
+            </div>
+            <p class="system-desc" data-en="Browser-native 3D spatial simulation with optimized low-draw-call GLTF streaming and collision raycasting." data-ar="محاكاة ثلاثية الأبعاد تفاعلية في المتصفح مع تحسين تحميل النماذج والأداء الحركي.">Browser-native 3D spatial simulation with optimized low-draw-call GLTF streaming and collision raycasting.</p>
           </div>
-          <div class="tags-row">
-            <span class="tag-pill">ERP</span>
-            <span class="tag-pill">Full-Stack</span>
-            <span class="tag-pill">SQL Database</span>
-            <button class="case-study-btn" data-project="nassiri">Deep Dive ➔</button>
+          <div>
+            <div class="tags-row">
+              <span class="tag-pill">Three.js</span>
+              <span class="tag-pill">Unity</span>
+              <span class="tag-pill">Blender</span>
+              <span class="tag-pill">GLTF</span>
+            </div>
+            <div class="action-buttons-row">
+              <button class="case-study-btn" data-project="library">Case Study ➔</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: R&D & Hardware Labs -->
+    <section class="content-section" id="hardware-labs">
+      <div class="section-header-row">
+        <div>
+          <div class="sec-tag" data-en="// Applied Innovation" data-ar="// ابتكار وبحث تطبيقي">// Applied Innovation</div>
+          <h2 class="sec-heading" data-en="R&D & Hardware Labs" data-ar="مختبر الابتكار والعتاد الصلب">R&D & Hardware Labs</h2>
+        </div>
+        <a href="https://github.com/ab99-c" target="_blank" rel="noopener noreferrer" class="lang-btn" data-en="View All Repos on GitHub (ab99-c) ↗" data-ar="عرض جميع المستودعات على GitHub ↗">View All Repos on GitHub (ab99-c) ↗</a>
+      </div>
+
+      <div class="systems-grid">
+        <!-- ADRAR AI NANO Wearable -->
+        <div class="system-card">
+          <div>
+            <div class="system-title-row">
+              <h3 class="system-name" data-en="ADRAR AI NANO Wearable" data-ar="جهاز ADRAR AI NANO">ADRAR AI NANO Wearable</h3>
+              <span class="system-role">IoT & Embedded</span>
+            </div>
+            <p class="system-desc" data-en="Prototyped autonomous dual-sensor wearable device in OpenSCAD with 3D-printed enclosure and wireless Python FastAPI edge AI offloading." data-ar="تصميم وتصنيع جهاز مساعد ذكي قابل للارتداء مع هيكل مطبوع بتقنية 3D وربط لاسلكي بالذكاء الاصطناعي.">Prototyped autonomous dual-sensor wearable device in OpenSCAD with 3D-printed enclosure and wireless Python FastAPI edge AI offloading.</p>
+          </div>
+          <div>
+            <div class="tags-row">
+              <span class="tag-pill">ESP32</span>
+              <span class="tag-pill">Arduino</span>
+              <span class="tag-pill">OpenSCAD</span>
+              <span class="tag-pill">Python 3.14</span>
+            </div>
+            <div class="action-buttons-row">
+              <button class="case-study-btn" data-project="wearable">Case Study ➔</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jarida Flipbook -->
+        <div class="system-card">
+          <div>
+            <div class="system-title-row">
+              <h3 class="system-name" data-en="Jarida Flipbook" data-ar="جريدة الأفق (Jarida)">Jarida Flipbook</h3>
+              <span class="system-role">Interactive 3D</span>
+            </div>
+            <p class="system-desc" data-en="Architected automated news ingestion pipeline and 3D canvas mesh deformation engine delivering tactile 60 FPS vintage newspaper page turns." data-ar="تطوير صحيفة رقمية ثلاثية الأبعاد تحاكي تقليب الصفحات الكلاسيكية مع خط أتمتة لجلب الأخبار.">Architected automated news ingestion pipeline and 3D canvas mesh deformation engine delivering tactile 60 FPS vintage newspaper page turns.</p>
+          </div>
+          <div>
+            <div class="tags-row">
+              <span class="tag-pill">TypeScript</span>
+              <span class="tag-pill">3D Mesh</span>
+              <span class="tag-pill">Vite</span>
+              <span class="tag-pill">Drizzle</span>
+            </div>
+            <div class="action-buttons-row">
+              <button class="case-study-btn" data-project="jarida">Case Study ➔</button>
+              <a class="ext-btn btn-live" href="https://jarida-authentic-2026-iqbj2dtu.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo ↗</a>
+              <a class="ext-btn btn-github" href="https://github.com/ab99-c/jarida" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Qahwati -->
+        <div class="system-card">
+          <div>
+            <div class="system-title-row">
+              <h3 class="system-name" data-en="Qahwati (قهوتي)" data-ar="قهوتي (Qahwati)">Qahwati (قهوتي)</h3>
+              <span class="system-role">POS & Realtime</span>
+            </div>
+            <p class="system-desc" data-en="Engineered cross-platform POS & kitchen synchronization system cutting table-to-barista ticket latency from minutes to under 2 seconds." data-ar="منظومة إدارة مقاهي فورية مع تطبيق نادل ولوحة تحكم للمطبخ تنقل الطلبات في أقل من ثانيتين.">Engineered cross-platform POS & kitchen synchronization system cutting table-to-barista ticket latency from minutes to under 2 seconds.</p>
+          </div>
+          <div>
+            <div class="tags-row">
+              <span class="tag-pill">Expo</span>
+              <span class="tag-pill">React Native</span>
+              <span class="tag-pill">REST API</span>
+              <span class="tag-pill">TypeScript</span>
+            </div>
+            <div class="action-buttons-row">
+              <button class="case-study-btn" data-project="qahwati">Case Study ➔</button>
+              <a class="ext-btn btn-github" href="https://github.com/ab99-c/Caf-" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
           </div>
         </div>
       </div>
@@ -1164,9 +1388,9 @@
       <p class="case-text" id="cs-impact">Engineering impact metrics.</p>
     </div>
 
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:24px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.08);">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-top:24px; padding-top:16px; border-top:1px solid rgba(255,255,255,0.08); flex-wrap:wrap; gap:12px;">
       <div class="tags-row" id="cs-tags"></div>
-      <a href="#" id="cs-link" target="_blank" rel="noopener noreferrer" class="btn-build" style="width:auto; padding:8px 16px; font-size:12.5px;">Visit Project ↗</a>
+      <div style="display:flex; gap:8px;" id="cs-actions-wrap"></div>
     </div>
   </dialog>
 
@@ -1175,7 +1399,7 @@
     <div class="modal-head">
       <div>
         <h3 class="modal-title" data-en="Initiate Contact & Hiring" data-ar="التواصل والتوظيف">Initiate Contact & Hiring</h3>
-        <div class="modal-subtitle" data-en="Open for Global Remote (US/EU), Senior Full-Stack, AI Systems & CTO Roles" data-ar="متاح للعمل عن بعد ولعقود القيادة التقنية والهجرة">Open for Global Remote (US/EU), Senior Full-Stack, AI Systems & CTO Roles</div>
+        <div class="modal-subtitle" data-en="Open for Global Remote (US/EU Aligned), Full-Stack & AI Systems Roles" data-ar="متاح للعمل عن بعد ولعقود القيادة التقنية والهجرة">Open for Global Remote (US/EU Aligned), Full-Stack & AI Systems Roles</div>
       </div>
       <button class="close-modal-btn" id="close-contact-btn" aria-label="Close dialog">✕</button>
     </div>
@@ -1219,82 +1443,95 @@
     </div>
 
     <div style="margin-top:20px; text-align:center;">
-      <a href="/cv" class="lang-btn" style="display:inline-block; padding:8px 18px;" data-en="Review Full Curriculum Vitae (/cv)" data-ar="عرض السيرة الذاتية المفصلة (/cv)">Review Full Curriculum Vitae (/cv)</a>
+      <a href="assets/CV-Abdelaziz-Ait-Haddou.pdf" target="_blank" rel="noopener noreferrer" class="lang-btn" style="display:inline-block; padding:8px 18px;" data-en="Download Technical Curriculum Vitae (PDF) ↗" data-ar="تحميل السيرة الذاتية المفصلة (PDF) ↗">Download Technical Curriculum Vitae (PDF) ↗</a>
     </div>
   </dialog>
 
   <script>
-    // Case Studies Data Dictionary (Problem -> Solution -> Architecture -> Impact)
-    const caseStudies = {
+    // Unified Projects Data Dictionary (with optional liveUrl & githubUrl)
+    const projectsData = {
       adrar: {
         title: "Adrar Tourisme",
+        category: "flagship",
         role: "Co-Founder & CTO · Full-Stack Distributed E-Commerce",
+        impactSubtitle: "Engineered multi-tenant booking & commerce engine processing online expeditions with sub-100ms API latency and automated Stripe settlements.",
         problem: "Tourism experiences in Morocco suffered from fragmented booking channels, zero payment guarantees, unverified guides, and lack of real-time scheduling.",
         solution: "Engineered an end-to-end commerce and booking platform using React 18, Vite, and tRPC with strict TypeScript contracts. Implemented multi-role authorization (tourists, licensed guides, administrators) and automated payment settlements with Stripe webhooks.",
         architecture: "Client (React/Vite SPA) ➔ tRPC Router ➔ PostgreSQL via Drizzle ORM ➔ Stripe Payment Gateway (Webhook Verification) ➔ Redis Invalidation",
         impact: "Sub-100ms API latency, zero payment state discrepancies across hundreds of transactions, and automated multilingual itinerary confirmation emails.",
         tags: ["React", "tRPC", "Vite", "Stripe", "PostgreSQL", "TailwindCSS"],
-        link: "https://azilal-tourism.vercel.app/"
+        liveUrl: "https://www.adrar-tourism.ma"
       },
       library: {
         title: "3D Virtual Library",
+        category: "flagship",
         role: "Lead 3D Simulation Engineer · EdTech & WebGL",
+        impactSubtitle: "Created multi-floor spatial learning environment rendering at 60 FPS in modern browsers via Three.js with 65% smaller Draco assets.",
         problem: "Static 2D digital archives lacked spatial immersion, engagement, and interactive contextual book exploration.",
         solution: "Built an interactive, multi-floor 3D library simulation rendering in modern web browsers via Unity WebGL and Three.js. Modeled custom low-poly modular architecture in Blender with optimized PBR textures.",
         architecture: "Blender Asset Pipeline (GLTF/GLB) ➔ Three.js / Unity WebGL Canvas ➔ Custom Spatial Navigation & Collision Raycaster ➔ IndexedDB Asset Caching",
         impact: "Smooth 60 FPS performance on standard laptops and mobile GPUs without native plugins; reduced total bundle asset size by 65% through Draco compression.",
-        tags: ["Unity", "Three.js", "Blender", "WebGL", "GLTF"],
-        link: "https://github.com/ab99-c"
+        tags: ["Unity", "Three.js", "Blender", "WebGL", "GLTF"]
       },
       wearable: {
         title: "AI Wearable Device (ADRAR AI NANO)",
-        role: "Creator & Systems Architect · IoT & Embedded AI",
+        category: "lab",
+        role: "Hardware & Systems Architect · IoT & Embedded AI",
+        impactSubtitle: "Fabricated autonomous sensor & vision wearable with custom 3D-printed enclosure, sub-350ms latency, and Python FastAPI edge AI offloading.",
         problem: "Commercial AI wearables are closed-ecosystem, expensive, and rely solely on continuous cloud streaming with severe battery drain.",
         solution: "Designed and fabricated an autonomous wearable assistant hardware device. Integrated ESP32 microcontroller with dual-lens sensing and audio capture in a custom parametric 3D-printed enclosure designed in OpenSCAD. Telemetry bridges over BLE/WiFi to Python edge services.",
         architecture: "Sensors & Mic ➔ ESP32 / Arduino Microcontroller ➔ BLE/WiFi Serial Gateway ➔ Python FastAPI Server ➔ Local LLM / Whisper Inference",
         impact: "Autonomous operation, under 350ms sensor response latency, and lightweight sub-45g wearable form factor.",
-        tags: ["Arduino", "ESP32", "OpenSCAD", "3D Printing", "Python 3.14"],
-        link: "https://github.com/ab99-c"
+        tags: ["Arduino", "ESP32", "OpenSCAD", "3D Printing", "Python 3.14"]
       },
       dhikra: {
         title: "Dhikra (ذِكْرى)",
+        category: "flagship",
         role: "Lead Mobile & AI Engineer · Privacy-Preserving RAG",
+        impactSubtitle: "Built 100% private offline-first personal memory assistant with on-device SQLite vector embeddings and sub-15ms Darija RAG search.",
         problem: "Users lose track of notes, voice memos, and links across multiple apps, while cloud AI assistants compromise personal privacy.",
         solution: "Engineered an offline-first mobile application in React Native with a localized vector retrieval engine (RAG) over device SQLite. Built a specialized Moroccan Darija conversational agent that understands local dialect nuance.",
         architecture: "React Native Client ➔ Device SQLite with FTS5 Vector Indexing ➔ Local RAG Retrieval Pipeline ➔ Proactive Temporal Task Scheduler",
         impact: "100% private on-device memory search with zero cloud data transmission, instant offline query response under 15ms.",
         tags: ["React Native", "AI RAG", "SQLite", "TypeScript", "Expo"],
-        link: "https://github.com/ab99-c/dhikra-app"
+        githubUrl: "https://github.com/ab99-c/dhikra-app"
       },
       jarida: {
         title: "Jarida Flipbook (جريدة الأفق)",
+        category: "lab",
         role: "Frontend Engineer & Pipeline Architect",
+        impactSubtitle: "Architected automated news ingestion pipeline and 3D canvas mesh deformation engine delivering tactile 60 FPS vintage newspaper page turns.",
         problem: "Traditional online newspapers are static scrolling walls of text that lose the tactile aesthetic and visual prestige of classic print media.",
         solution: "Built a realistic vintage newspaper simulation with authentic page-turning physics in TypeScript and Vite, backed by automated daily edition aggregation.",
         architecture: "Automated Content Fetcher ➔ Markdown/Asset Pipeline ➔ 3D Mesh Page Deformation Canvas ➔ Responsive Viewport Adapter",
         impact: "Delivers fluid 60fps page turns with authentic typography styling and responsive dual-page or single-page view across mobile and desktop.",
         tags: ["TypeScript", "Vite", "3D Canvas", "Drizzle"],
-        link: "https://github.com/ab99-c/jarida"
+        liveUrl: "https://jarida-authentic-2026-iqbj2dtu.vercel.app",
+        githubUrl: "https://github.com/ab99-c/jarida"
       },
       qahwati: {
         title: "Qahwati (قهوتي)",
+        category: "lab",
         role: "Full-Stack Engineer · Mobile & POS Management",
+        impactSubtitle: "Engineered cross-platform POS & kitchen synchronization system cutting table-to-barista ticket latency from minutes to under 2 seconds.",
         problem: "Independent cafés and restaurants face high subscription costs and complex setup for point-of-sale and kitchen order tracking.",
         solution: "Developed an all-in-one management suite with a web analytics dashboard and a cross-platform Expo React Native app for waitstaff and barista order synchronization.",
         architecture: "Expo Mobile App / Web Dashboard ➔ Node.js REST API ➔ Relational Database with Real-Time Table State Sync",
         impact: "Streamlines order routing from table to barista in under 2 seconds, eliminating paper tickets and ordering bottlenecks.",
         tags: ["Expo", "React Native", "TypeScript", "REST API"],
-        link: "https://github.com/ab99-c/Caf-"
+        githubUrl: "https://github.com/ab99-c/Caf-"
       },
       nassiri: {
         title: "NASSIRI ERP",
+        category: "flagship",
         role: "Systems Architect & Enterprise Full-Stack Engineer",
+        impactSubtitle: "Developed transactional ERP platform unifying multi-warehouse inventory auditing and billing with zero stock discrepancies and ACID reliability.",
         problem: "Mid-sized contracting and retail businesses required a unified platform for inventory, invoicing, and subcontractor accounting without enterprise licensing overhead.",
         solution: "Engineered a structured modular ERP with strict relational data integrity, multi-warehouse inventory auditing, and automated financial balance sheets.",
         architecture: "Enterprise Web Interface ➔ Business Logic Controller Layer ➔ Transactional SQL Database with Strict ACID Guarantees",
         impact: "Standardized multi-location inventory reconciliation, preventing stock discrepancies and automating supplier payment schedules.",
         tags: ["ERP", "Full-Stack", "SQL", "Enterprise Architecture"],
-        link: "https://github.com/ab99-c/NASSIRI"
+        githubUrl: "https://github.com/ab99-c/NASSIRI"
       }
     };
 
@@ -1302,34 +1539,57 @@
     const csDialog = document.querySelector('#case-study-dialog');
     const closeCsBtn = document.querySelector('#close-cs-btn');
 
-    document.querySelectorAll('.case-study-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
+    function openCaseStudyModal(projectKey) {
+      const data = projectsData[projectKey];
+      if (!data) return;
+
+      document.querySelector('#cs-title').textContent = data.title;
+      document.querySelector('#cs-role').textContent = data.role;
+      document.querySelector('#cs-problem').textContent = data.problem;
+      document.querySelector('#cs-solution').textContent = data.solution;
+      document.querySelector('#cs-architecture').textContent = data.architecture;
+      document.querySelector('#cs-impact').textContent = data.impact;
+      
+      // Tags
+      const tagsWrap = document.querySelector('#cs-tags');
+      tagsWrap.innerHTML = '';
+      data.tags.forEach(t => {
+        const pill = document.createElement('span');
+        pill.className = 'tag-pill';
+        pill.textContent = t;
+        tagsWrap.appendChild(pill);
+      });
+
+      // Action links in modal
+      const actionsWrap = document.querySelector('#cs-actions-wrap');
+      actionsWrap.innerHTML = '';
+      if (data.liveUrl) {
+        const liveA = document.createElement('a');
+        liveA.className = 'ext-btn btn-live';
+        liveA.href = data.liveUrl;
+        liveA.target = '_blank';
+        liveA.rel = 'noopener noreferrer';
+        liveA.textContent = 'Live Demo ↗';
+        actionsWrap.appendChild(liveA);
+      }
+      if (data.githubUrl) {
+        const gitA = document.createElement('a');
+        gitA.className = 'ext-btn btn-github';
+        gitA.href = data.githubUrl;
+        gitA.target = '_blank';
+        gitA.rel = 'noopener noreferrer';
+        gitA.textContent = 'GitHub ↗';
+        actionsWrap.appendChild(gitA);
+      }
+
+      csDialog.showModal();
+    }
+
+    document.querySelectorAll('[data-project]').forEach(el => {
+      el.addEventListener('click', (e) => {
+        if (e.target.closest('a')) return;
         e.preventDefault();
-        e.stopPropagation();
-        const projectKey = btn.dataset.project;
-        const data = caseStudies[projectKey];
-        if (!data) return;
-
-        document.querySelector('#cs-title').textContent = data.title;
-        document.querySelector('#cs-role').textContent = data.role;
-        document.querySelector('#cs-problem').textContent = data.problem;
-        document.querySelector('#cs-solution').textContent = data.solution;
-        document.querySelector('#cs-architecture').textContent = data.architecture;
-        document.querySelector('#cs-impact').textContent = data.impact;
-        
-        const tagsWrap = document.querySelector('#cs-tags');
-        tagsWrap.innerHTML = '';
-        data.tags.forEach(t => {
-          const pill = document.createElement('span');
-          pill.className = 'tag-pill';
-          pill.textContent = t;
-          tagsWrap.appendChild(pill);
-        });
-
-        const linkBtn = document.querySelector('#cs-link');
-        linkBtn.href = data.link;
-
-        csDialog.showModal();
+        openCaseStudyModal(el.dataset.project);
       });
     });
 
@@ -1348,12 +1608,14 @@
       if (e) e.preventDefault();
       contactDialog.showModal();
     }
-    openContactBtn.addEventListener('click', openContactModal);
-    navContactTrigger.addEventListener('click', openContactModal);
-    closeContactBtn.addEventListener('click', () => contactDialog.close());
-    contactDialog.addEventListener('click', (e) => {
-      if (e.target === contactDialog) contactDialog.close();
-    });
+    if (openContactBtn) openContactBtn.addEventListener('click', openContactModal);
+    if (navContactTrigger) navContactTrigger.addEventListener('click', openContactModal);
+    if (closeContactBtn) closeContactBtn.addEventListener('click', () => contactDialog.close());
+    if (contactDialog) {
+      contactDialog.addEventListener('click', (e) => {
+        if (e.target === contactDialog) contactDialog.close();
+      });
+    }
 
     // Language Toggle (English Primary <-> Arabic Support)
     const langBtn = document.querySelector('#lang-toggle');
@@ -1371,33 +1633,27 @@
       langBtn.textContent = currentLang === 'en' ? 'عربي' : 'English';
     });
 
-    // Selected works click scrolls to Extra Systems
-    document.querySelector('#toggle-extra-works').addEventListener('click', () => {
-      document.querySelector('#extra-works').scrollIntoView({ behavior: 'smooth' });
-    });
+    // Selected works click scrolls to systems
+    const toggleWorks = document.querySelector('#toggle-extra-works');
+    if (toggleWorks) {
+      toggleWorks.addEventListener('click', () => {
+        const sec = document.querySelector('#flagship-systems') || document.querySelector('#architecture');
+        if (sec) sec.scrollIntoView({ behavior: 'smooth' });
+      });
+    }
 
     // Zero-Touch Live GitHub Automation Sync (/api/stats with /api/stats.json fallback)
     async function syncLiveMetrics() {
       try {
         let res = await fetch('/api/stats').catch(() => null);
         if (!res || !res.ok) {
-          res = await fetch('/api/stats.json').catch(() => null);
+          res = await fetch('api/stats.json').catch(() => null);
         }
         if (!res || !res.ok) return;
         const data = await res.json();
         
-        if (data.commitsCount) {
-          document.querySelector('#commit-stat').textContent = data.commitsCount;
-        }
-        if (data.clientsCount) {
-          document.querySelector('#client-stat').textContent = data.clientsCount;
-        }
-        if (data.publicRepos) {
-          document.querySelector('#repo-count-display').textContent = `(${data.publicRepos})`;
-        }
-        const badge = document.querySelector('#sync-status');
-        if (badge) {
-          badge.textContent = data.mode === 'live' ? '⚡ Live Synced' : '⚡ Verified Metrics';
+        if (data.totalCommits && document.querySelector('#stat-commits')) {
+          document.querySelector('#stat-commits').textContent = data.totalCommits || '7130';
         }
       } catch (err) {
         // Keeps verified fallback metrics smoothly
